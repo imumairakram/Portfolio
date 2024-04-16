@@ -1,0 +1,255 @@
+<nav class="navbar">
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Icon.jpeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project_3</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            color: #fff;
+        }
+
+        body {
+            background: linear-gradient(35deg, #000000, 70%, #000000);
+            height: 100vh;
+        }
+
+        .header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 10%;
+        }
+
+        .header a {
+            text-decoration: none;
+        }
+
+        .header .logo {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .header .navbar a {
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 35px;
+            position: relative;
+            padding: 10px 15px;
+            z-index: 1;
+        }
+
+        .header .navbar a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(255, 255, 255, 0.7);
+            height: 100%;
+            width: 100%;
+            border-radius: 19px;
+            z-index: -1;
+            transform: scale(0);
+            transition: .5s ease;
+        }
+
+        .navbar a:hover::before {
+            transform: scale(1);
+        }
+
+        .home {
+            display: flex;
+            height: 100vh;
+            padding: 10rem 9% 2rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .home img {
+            width: 50%;
+            height: auto;
+            max-width: 400px;
+        }
+
+        .home .text-content h2 {
+            font-size: 50px;
+        }
+
+        .text-content p {
+            font-size: 13px;
+            margin: 15px;
+            max-width: 700px;
+        }
+
+        .btn {
+            height: 50px;
+            width: 150px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            background: transparent;
+            border-radius: 8px;
+            font-size: 15px;
+            margin: 20px 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: linear-gradient(35deg, #0f0a0a, 70%, #ffffff);
+            z-index: -1;
+            transition: .5s ease;
+            transform-origin: left bottom;
+        }
+
+        .btn:nth-child(2)::before {
+            width: 0%;
+            transform: skew(35deg);
+        }
+
+        .btn:nth-child(2):hover:before {
+            width: 100%;
+            transform: skew(0deg);
+        }
+
+        .btn:hover::before {
+            width: 0;
+            transform: skew(35deg);
+        }
+
+        .social-media {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background: linear-gradient(35deg, #0f0a0a, 70%, #17a7ba);
+                height: auto;
+            }
+
+            .header .navbar {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: linear-gradient(35deg, #0f0a0a, 70%, #17a7ba);
+                width: 100%;
+                text-align: center;
+            }
+
+            .header .navbar a {
+                margin: 0;
+                padding: 15px;
+                display: block;
+            }
+
+            .header .navbar.active {
+                display: flex;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+            }
+
+            .home img {
+                width: 100%;
+                height: auto;
+            }
+
+            .home .text-content h2 {
+                font-size: 30px;
+            }
+
+            .text-content p {
+                font-size: 13px;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .social-media {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+            .header .navbar a {
+                margin-left: 20px;
+            }
+
+            .home {
+                padding: 8rem 7%;
+            }
+
+            .home .text-content h2 {
+                font-size: 40px;
+            }
+
+            .text-content p {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (min-width: 1201px) and (max-width: 1300px) {
+            .home {
+                padding: 10rem 9% 2rem;
+            }
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Krossfit.</a>
+            <nav class="navbar">
+    
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Trainers</a>
+                <a href="#">Products</a>
+                <a href="#">Contact us</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="text-content">
+                <h2>Build Your Body</h2>
+                <p>It doesn't matter if your goal is to get stronger, burn fat, or to just stay fit. Our world-class
+                    coaches will guide you every step of the way.</p>
+                <div class="button">
+                    <button class="btn">Follow Us</button>
+                    <button class="btn"
+                        onclick="location.href='#'">Join
+                        Now</button>
+                </div>
+            </div>
+            <img src="P3-bg.jpg" alt="image">
+        </section>
+    </body>
+
+    </html>

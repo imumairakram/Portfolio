@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="Icon.jpeg">
+  <title>Umair's Portfolio</title>
+  <link rel="stylesheet" href="indexx.css" />
+</head>
+
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Umair.</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Umair.</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="Umair.png" alt="Image">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Umair Akram</h1>
+      <p class="section__text__p2"><span id="typing-text">Website Developer</span></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('Umair Akram - Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/umaaiir-akram" target="_blank"><img class="icon" src="LinkedIn.png"
+            alt="Linkedin"></a>
+        <a href="https://www.facebook.com/umaaiir.akram" target="_blank"><img class="icon" src="Facebook.png"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/umaaiir_akram" target="_blank"><img class="icon" src="Twitter.png"
+            alt="Twitter"></a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="Umair.png" alt="Image">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+
+            <h3>Experience</h3>
+            <p>6+ Months <br />Website Development</p>
+          </div>
+          <div class="details-container">
+
+            <h3>Education</h3>
+            <p>BS. Software Engineering<br />(present)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello, I'm Muhammad Umair Akram, an ambitious undergraduate student with a passion for becoming a future
+            software engineer. My expertise lies in web development, where I have a strong command of HTML, CSS, and
+            JavaScript. Specializing in WordPress and Photoshop, I enjoy creating custom, responsive, and distinctive
+            websites that align with my clients' vision.</p>
+          <br>
+          <p>
+            My commitment to establishing enduring relationships with clients is reflected in my dedication to
+            delivering quality work. Possessing excellent communication skills, I ensure a thorough understanding of
+            your goals. Regardless of your industry, I am adept at crafting exceptional, responsive, and user-friendly
+            websites. With a keen eye for design and proficiency in English language, coupled with effective time
+            management, I am well-equipped to bring your vision to life through web development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <p class="section__text__p1">What I Offer</p>
+    <h1 class="title">My Services</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">WordPress</h2>
+          <p>Custom WordPress theme development, plugin customization, and optimization.</p>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Responsive Websites</h2>
+          <p>Creating websites that work seamlessly across various devices and screen sizes.</p>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Graphic Design</h2>
+          <p>Designing visually appealing graphics and images for websites and promotional materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title"></h2>
+          <div class="column right">
+            <div class="bars">
+              <div class="info">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="line js"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>WordPress</span>
+                <span>66%</span>
+              </div>
+              <div class="line wordpress"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>C++ Programming</span>
+                <span>86%</span>
+              </div>
+              <div class="line cpp-programming"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Graphic Designing</span>
+                <span>73%</span>
+              </div>
+              <div class="line graphic-designing"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Video Editing</span>
+                <span>87%</span>
+              </div>
+              <div class="line video-editing"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Communication Skills</span>
+                <span>79%</span>
+              </div>
+              <div class="line communication-skills"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Java</span>
+                <span>75%</span>
+              </div>
+              <div class="line java"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Python Programming</span>
+                <span>75%</span>
+              </div>
+              <div class="line python-programming"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="P1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/imumairakram/imumairakram/blob/main/Project1.html'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <!-- <img src="Screenshot 2023-11-12 153014.png" alt="Project 2" class="project-img" /> -->
+            <img src="/P2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/imumairakram/imumairakram/blob/main/Project2.html'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="P3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/imumairakram/imumairakram/blob/main/project3.html'">
+              Github
+            </button>
+          </div>
+        </div>
+        <!-- Project Four -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="P4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Four</h2>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/imumairakram/imumairakram/blob/main/project4.html'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+  <br>
+  <br>
+  <!-- Add this section after the contact section -->
+  <section id="testimonials">
+    <p class="section__text__p1">What Others Say</p>
+    <h1 class="title">testimonials</h1>
+    <div class="testimonials-container">
+      <div class="testimonials">
+        <img src="Testimonal-1.jpg" alt="Client 1" class="testimonials-img" />
+        <p class="testimonials-text">
+          "Umair is an amazing developer. He delivered a fantastic website for our business, and we are thrilled with
+          the results."
+        </p>
+        <p class="client-name">John Doe</p>
+      </div>
+      <div class="testimonials">
+        <img src="Testimonal-2.jpg" alt="Client 2" class="testimonials-img" />
+        <p class="testimonials-text">
+          "Working with Umair was a pleasure. He is professional, creative, and has a keen eye for design. Highly
+          recommended!"
+        </p>
+        <p class="client-name">Jane Smith</p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <p><a href="mailto:umaaiirakram@gmail.com">umaaiirakram@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Umair Akram. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      const typingText = document.getElementById("typing-text");
+      const originalText = typingText.textContent;
+
+      function type() {
+        typingText.textContent = "";
+        let i = 0;
+        function typeCharacter() {
+          typingText.textContent += originalText.charAt(i);
+          i++;
+          if (i < originalText.length) {
+            setTimeout(typeCharacter, 100);
+          }
+        }
+        typeCharacter();
+      }
+
+      type(); // Trigger the typing animation when the page loads
+    });
+
+  </script>
+</body>
+
+</html>
