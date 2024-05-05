@@ -4,28 +4,51 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
-  document.addEventListener("DOMContentLoaded", function () {
-    const typingText = document.getElementById("typing-text");
-    const originalText = typingText.textContent;
 
-    function type() {
-      typingText.textContent = "";
-      let i = 0;
-      function typeCharacter() {
-        typingText.textContent += originalText.charAt(i);
-        i++;
-        if (i < originalText.length) {
-          setTimeout(typeCharacter, 100);
-        }
-      }
-      typeCharacter();
+
+
+  // List of words to type
+  const words = ["Website Developer", "WordPress Developer", "Video Editor"];
+  let currentWordIndex = 0;
+  let currentCharIndex = 0;
+  let typingSpeed = 70; 
+
+  // Function to start typing
+  function startTyping() {
+    const typingElement = document.getElementById("typing-text");
+    typingElement.innerHTML = "";
+    typeNextChar(typingElement);
+  }
+
+  // Function to type next character
+  function typeNextChar(typingElement) {
+    if (currentCharIndex < words[currentWordIndex].length) {
+      typingElement.innerHTML += words[currentWordIndex].charAt(currentCharIndex);
+      currentCharIndex++;
+      setTimeout(function() {
+        typeNextChar(typingElement);
+      }, typingSpeed);
+    } else {
+      currentCharIndex = 0;
+      currentWordIndex = (currentWordIndex + 1) % words.length;
+      setTimeout(function() {
+        changeColor();
+        setTimeout(startTyping, 1000); 
+      }, typingSpeed * 10); 
     }
+  }
 
-    type(); // Trigger the typing animation when the page loads
-  });
+  // Function to change text color
+  function changeColor() {
+    const typingElement = document.getElementById("typing-text");
+    typingElement.style.color = "rgb(102, 179, 255)";
+  }
+
+  window.onload = startTyping;
 
 
 
+  
   // Function to show the message when the "Live Demo" button is clicked
   function showDemoMessage1() {
     var message = document.getElementById("demoMessage");
