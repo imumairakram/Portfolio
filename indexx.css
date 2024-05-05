@@ -1,5 +1,3 @@
- /* GENERAL */
-
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
  * {
@@ -200,6 +198,13 @@
    font-size: 3rem;
    text-align: center;
  }
+
+ .typing-text {
+  color: rgb(102, 179, 255);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
 
  #socials-container {
    display: flex;
@@ -509,7 +514,7 @@
  }
 
  .about-containers .right .communication-skills::before {
-   width: 79%;
+   width: 85%;
  }
 
  .about-containers .right .graphic-designing::before {
