@@ -50,12 +50,10 @@
  }
 
  a:hover {
-   /* color: grey; */
-   color: rgb(149, 202, 255);
+   color: rgb(102, 179, 255);
    text-decoration: underline;
    text-underline-offset: 1rem;
-   text-decoration-color: rgb(149, 202, 255);
-   /* text-decoration-color: rgb(181, 181, 181); */
+   text-decoration-color: rgb(102, 179, 255);
  }
 
  .logo {
