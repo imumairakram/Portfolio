@@ -50,10 +50,10 @@
  }
 
  a:hover {
-   color: rgb(39 44 49);;
+   color: rgb(39 44 49);
    text-decoration: underline;
    text-underline-offset: 1rem;
-   text-decoration-color: rgb(39 44 49);;
+   text-decoration-color: rgb(39 44 49);
  }
 
  .logo {
@@ -264,7 +264,7 @@
 
  .btn-color-1,
  .btn-color-2:hover {
-   background: rgb(39 44 49);;
+   background: rgb(39 44 49);
    border: 0.1rem solid black;
    color: white;
  }
