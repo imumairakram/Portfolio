@@ -41,7 +41,7 @@ function toggleMenu() {
   // Function to change text color
   function changeColor() {
     const typingElement = document.getElementById("typing-text");
-    typingElement.style.color = "rgb(102, 179, 255)";
+    typingElement.style.color = "rgb(39 44 49)";
   }
 
   window.onload = startTyping;
