@@ -475,121 +475,126 @@ section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+/* Adjustments for medium-sized screens (1200px) */
+@media screen and (max-width: 1200px) {
 
-@media (max-width: 1150px) {
-  .section__pic-container {
-    height: 300px;
-    width: 300px;
-  }
-
-  .details-container {
-    padding: 1rem;
-  }
-
-  section {
-    margin: 0 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links,
-  .logo {
+  /* Existing styles for 1200px */
+  #desktop-nav {
     display: none;
   }
 
   #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
     display: block;
   }
 
-  nav {
-    justify-content: space-between;
+  .arrow {
+    display: none;
   }
 
-  .menu-links.open {
-    max-height: 300px;
+  section,
+  .section-container {
+    height: fit-content;
   }
 
   section {
-    margin: 0 2rem;
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+/* Adjustments for smaller screens (600px) */
+@media screen and (max-width: 600px) {
+
+  /* Existing styles for 600px */
+  #contact,
+  footer {
+    height: 40vh;
   }
 
   #profile {
-    flex-direction: column-reverse;
-    align-items: center;
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
   }
 
   .section__pic-container {
-    height: 250px;
-    width: 250px;
+    width: auto;
+    height: 46vw;
+    justify-content: center;
   }
 
-  #profile .section__text {
-    margin-bottom: 3rem;
-  }
-
-  .typing-text {
-    font-size: 1.5rem;
-  }
-
-  .about-containers {
-    flex-direction: column;
-  }
-
-  .about-details-container {
-    align-items: center;
-  }
-
-  .section-container {
-    flex-direction: column;
-  }
-
-  .section-container > div {
-    width: 100%;
-  }
-
-  .details-container {
-    width: 100%;
-  }
-
-  .details-container p {
-    font-size: 1rem;
-  }
-
-  .btn-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .experience-containers {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .experience-details-container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .section__pic-container {
-    height: 200px;
-    width: 200px;
-  }
-
-  .details-container {
-    padding: 0.5rem;
-  }
-
-  section {
-    margin: 0 1rem;
+  .section__text__p2 {
+    font-size: 1.25rem;
   }
 
   .title {
     font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  /* New styles for 600px */
+  /* For example, you might want to stack navigation items */
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
 }
