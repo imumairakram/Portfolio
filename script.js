@@ -8,7 +8,7 @@ function toggleMenu() {
 
 
   // List of words to type
-  const words = ["Website Developer", "WordPress Developer", "Video Editor", "Coder"];
+  const words = ["Website Developer", "WordPress Developer", "Video Editor"];
   let currentWordIndex = 0;
   let currentCharIndex = 0;
   let typingSpeed = 70; 
@@ -17,7 +17,7 @@ function toggleMenu() {
   function startTyping() {
     const typingElement = document.getElementById("typing-text");
     typingElement.innerHTML = "";
-    typeNextChar(typingElement);
+    typeNextChar(typingElement); 
   }
 
   // Function to type next character
@@ -41,7 +41,7 @@ function toggleMenu() {
   // Function to change text color
   function changeColor() {
     const typingElement = document.getElementById("typing-text");
-    typingElement.style.color = "rgb(39 44 49)";
+    typingElement.style.color = "rgb(39 44 49);";
   }
 
   window.onload = startTyping;
@@ -49,37 +49,41 @@ function toggleMenu() {
 
 
   
-  // Function to show the 1st message when the "Live Demo" button is clicked
+  // Function to show the message when the "Live Demo" button is clicked
   function showDemoMessage1() {
     var message = document.getElementById("demoMessage");
     message.style.display = "block";
+    // Hide the message after 4 seconds
     setTimeout(function () {
       message.style.display = "none";
     }, 3000);
   }
 
-  //Function to show the 2nd message when the "Live Demo" button is clicked
+  //Function to show the message when the "Live Demo" button is clicked
   function showDemoMessage2() {
     var message = document.getElementById("demoMessage");
     message.style.display = "block";
+    // Hide the message after 4 seconds
     setTimeout(function () {
       message.style.display = "none";
     }, 3000);
   }
 
-  // Function to show the 3rd message when the "Live Demo" button is clicked
+  // Function to show the message when the "Live Demo" button is clicked
   function showDemoMessage3() {
     var message = document.getElementById("demoMessage");
     message.style.display = "block";
+    // Hide the message after 4 seconds
     setTimeout(function () {
       message.style.display = "none";
     }, 3000);
   }
 
-  // Function to show the 4th message when the "Live Demo" button is clicked
+  // Function to show the message when the "Live Demo" button is clicked
   function showDemoMessage4() {
     var message = document.getElementById("demoMessage");
     message.style.display = "block";
+    // Hide the message after 4 seconds
     setTimeout(function () {
       message.style.display = "none";
     }, 3000);
