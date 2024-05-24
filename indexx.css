@@ -14,7 +14,7 @@ html {
 }
 
 p {
-  color: rgb(39, 44, 49);
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -50,10 +50,10 @@ a {
 }
 
 a:hover {
-  color: rgb(39, 44, 49);
+  color: rgb(39 44 49);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(39, 44, 49);
+  text-decoration-color: rgb(39 44 49);
 }
 
 .logo {
@@ -87,8 +87,8 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: rgb(39, 44, 49);
-  transition: all 0.3s ease-in-out;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -99,7 +99,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -107,9 +107,9 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(39, 44, 49);
+  color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -122,7 +122,6 @@ a:hover {
 
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
-  background-color: rgb(39, 44, 49);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -131,7 +130,6 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-  background-color: rgb(39, 44, 49);
 }
 
 .hamburger-icon span:first-child {
@@ -183,7 +181,6 @@ section {
 
 .section__text p {
   font-weight: 600;
-  color: rgb(39, 44, 49);
 }
 
 .section__text__p1 {
@@ -198,14 +195,13 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  color: rgb(39, 44, 49);
 }
 
 .typing-text {
-  color: rgb(39, 44, 49);
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 6px;
+ color: rgb(39 44 49);
+ font-size: 24px;
+ font-weight: 600;
+ margin-bottom: 6px;
 }
 
 #socials-container {
@@ -215,30 +211,31 @@ section {
   gap: 1rem;
 }
 
+
+
 /* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
-
 #socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  margin: 0 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
-}
-
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+ }
+ 
+ .icon {
+   width: 30px;
+   height: 30px;
+   margin: 0 0.5rem;
+   transition: transform 0.3s ease;
+ }
+ 
+ .icon:hover {
+   transform: scale(1.2);
+ }
+ 
 /* BUTTONS */
 
 .btn-container {
@@ -267,7 +264,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(39, 44, 49);
+  background: rgb(39 44 49);
   border: 0.1rem solid black;
   color: white;
 }
@@ -283,7 +280,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(39, 44, 49) 0.1rem solid;
+  border: rgb(0, 0, 0) 0.1rem solid;
 }
 
 .btn-container {
@@ -306,6 +303,7 @@ section {
   margin-left: 2px;
   animation: typing 2s steps(20) infinite;
 }
+
 
 /* ABOUT SECTION */
 
@@ -347,7 +345,6 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  color: rgb(39, 44, 49);
 }
 
 .section-container {
@@ -378,7 +375,7 @@ section {
 }
 
 #services .title {
-  color: rgb(39, 44, 49);
+  color: #000;
   /* Adjust the title color as needed */
 }
 
@@ -404,7 +401,6 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
   margin-bottom: 2rem;
-  color: rgb(39, 44, 49);
 }
 
 #services .experience-sub-title {
@@ -416,15 +412,8 @@ section {
 
 #services .details-container p {
   font-size: 1rem;
-  color: rgb(39, 44, 49);
+  color: #555;
   /* Adjust the text color as needed */
-}
-
-#services .experience-details-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 /* EXPERIENCE SECTION */
@@ -434,47 +423,235 @@ section {
 }
 
 .experience-sub-title {
-  color: black;
+  color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-containers {
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+#experience .about-containers .right .bars {
+  margin-bottom: 15px;
+}
+
+#experience .about-containers.right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#experience .about-containers .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#experience .about-containers .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+#experience .about-containers .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+}
+
+.about-containers .right .html::before {
+  width: 90%;
+}
+
+.about-containers .right .css::before {
+  width: 80%;
+}
+
+.about-containers .right .js::before {
+  width: 70%;
+}
+
+.about-containers .right .wordpress::before {
+  width: 66%;
+}
+
+.about-containers .right .java::before {
+  width: 75%;
+}
+
+.about-containers .right .cpp-programming::before {
+  width: 86%;
+}
+
+.about-containers .right .communication-skills::before {
+  width: 85%;
+}
+
+.about-containers .right .graphic-designing::before {
+  width: 73%;
+}
+
+.about-containers .right .video-editing::before {
+  width: 87%;
+}
+
+.about-containers .right .python-programming::before {
+  width: 75%;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.project-title {
+  text-align: center;
+}
+
+/* Testimonal */
+/* Add this to your existing CSS */
+#testimonials {
+  background-color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonials-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
-.experience-details-container {
+.testimonials {
+  max-width: 400px;
   padding: 1.5rem;
-  flex: 1;
-  background: white;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.testimonials-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+}
+
+.testimonials-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.client-name {
+  font-weight: 600;
+  color: #555;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
-  margin-bottom: 2rem;
-  color: rgb(39, 44, 49);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
 }
 
-.experience-details-container p {
-  font-size: 1rem;
-  color: rgb(39, 44, 49);
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.contact-info-container p {
+  font-size: larger;
 }
 
-#experience {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.contact-icon {
+  cursor: default;
 }
+
+.email-icon {
+  height: 2.5rem;
+}
+
 
 /* FOOTER SECTION */
 
