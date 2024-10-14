@@ -488,27 +488,27 @@ article .icon {
 }
 
 .about-containers .right .html::before {
-  width: 90%;
+  width: 95%;
 }
 
 .about-containers .right .css::before {
-  width: 80%;
+  width: 85%;
 }
 
 .about-containers .right .js::before {
-  width: 70%;
-}
-
-.about-containers .right .wordpress::before {
-  width: 66%;
-}
-
-.about-containers .right .java::before {
   width: 75%;
 }
 
+.about-containers .right .wordpress::before {
+  width: 76%;
+}
+
+.about-containers .right .java::before {
+  width: 80%;
+}
+
 .about-containers .right .cpp-programming::before {
-  width: 86%;
+  width: 75%;
 }
 
 .about-containers .right .communication-skills::before {
@@ -516,15 +516,19 @@ article .icon {
 }
 
 .about-containers .right .graphic-designing::before {
-  width: 73%;
+  width: 86%;
 }
 
 .about-containers .right .video-editing::before {
-  width: 87%;
+  width: 82%;
 }
 
 .about-containers .right .python-programming::before {
-  width: 75%;
+  width: 87%;
+}
+
+.about-containers .right .my-sql::before {
+  width: 72%;
 }
 
 /* PROJECTS SECTION */
