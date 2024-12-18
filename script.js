@@ -8,7 +8,7 @@ function toggleMenu() {
 
 
   // List of words to type
-  const words = ["Website Developer", "WordPress Developer", "Video Editor", "Graphic Designer", "Coder"];
+  const words = ["Website Developer", "WordPress Developer", "Python Developer", "Coder"];
   let currentWordIndex = 0;
   let currentCharIndex = 0;
   let typingSpeed = 70; 
